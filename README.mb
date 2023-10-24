@@ -1,1 +1,23 @@
-1. END to End ML Project
+# RAG on Lord of the Rings
+
+This project utilizes Retrieval-Augmented Generation (RAG) to delve into the rich text of Lord of the Rings. The text is divided into manageable chunks, which are then upserted into Pinecone, a vector database, to enable efficient retrieval. RAG is then employed to retrieve relevant information upon query.
+
+## Project Structure
+
+1. **Text Chunking**:
+    - The text is divided into chunks using a custom chunking algorithm to ensure contextual integrity.
+    
+2. **Pinecone Upsert**:
+    - The chunks are upserted into Pinecone to allow for vectorized querying.
+    
+3. **RAG Retrieval**:
+    - Utilizing RAG to retrieve relevant chunks based on queries, enriching the responses with contextual insights from the text.
+
+## Technologies Used
+
+- **RAG (Retrieval-Augmented Generation)**: For retrieving contextual information.
+- **Pinecone**: For vectorized data storage and retrieval.
+- **Python**: For data processing and interaction with Pinecone and RAG.
+
+
+Use your own openai and pinecone api key, and you can use your own context
